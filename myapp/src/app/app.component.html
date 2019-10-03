@@ -1,0 +1,13 @@
+<input type="text" [(ngModel)]="name">
+<p>Anything you type above will show here:{{name}}</p>
+<h3>My Dist</h3>
+<hr>
+<app-image></app-image>
+<app-button></app-button>
+<div>
+    <ul>
+      <li *ngFor="let mcr of mc">
+        <b>{{mcr.timestamp}}</b> - {{mcr.text}}
+      </li>
+    </ul>
+</div>
